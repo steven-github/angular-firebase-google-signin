@@ -35,11 +35,22 @@ export class AuthService {
       });
   }
 
+  // Firebase Facebook Sign-in
+  SigninWithFacebook() {
+    return this.OAuthProvider(new auth.FacebookAuthProvider())
+      .then((res) => {
+        console.log('Successfully Facebook logged in!');
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   // Firebase Google Sign-in
   SigninWithGoogle() {
     return this.OAuthProvider(new auth.GoogleAuthProvider())
       .then((res) => {
-        console.log('Successfully logged in!');
+        console.log('Successfully Google logged in!');
       })
       .catch((error) => {
         console.log(error);
