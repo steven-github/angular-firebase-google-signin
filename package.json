@@ -1,5 +1,5 @@
 {
-  "name": "angular-firebase-google-signin",
+  "name": "angular-firebase-social-signin",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
